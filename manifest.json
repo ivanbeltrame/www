@@ -58,8 +58,8 @@
     ],
     "display_override": [
       "window-controls-overlay",
-      "minimal-ui",
       "standalone",
+      "minimal-ui",
       "browser"
     ],
     "shortcuts": [

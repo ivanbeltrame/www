@@ -7,7 +7,7 @@
     "theme_color": "#0d6efd",
     "background_color": "#fff",
     "orientation": "any",
-    "display": "minimal-ui",
+    "display": "standalone",
     "dir": "ltr",
     "lang": "it",
     "categories": ["utilities", "games"],

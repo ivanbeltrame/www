@@ -1,4 +1,4 @@
-const cacheVersion = "v33";
+const cacheVersion = "v34";
 const statiCache = "site-static-" + cacheVersion;
 const dynamicCache = "site-dynamic-" + cacheVersion;
 
@@ -71,6 +71,8 @@ const imgs = [
     "/img/certs/harvard/pro-cert-py.png",
     "/img/certs/harvard/ver-cert-py.png",
     "/img/certs/harvard/ver-cert-x.jpg",
+    "/img/certs/harvard/pro-cert-ai.png",
+    "/img/certs/harvard/ver-cert-ai.png",
     "/img/certs/sololearn/c.jpg",
     "/img/certs/sololearn/html.jpg",
     "/img/certs/sololearn/java.png",

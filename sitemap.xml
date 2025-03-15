@@ -2,21 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.ivanbeltrame.com/</loc>
-        <lastmod>2025-01-09</lastmod>
+        <lastmod>2025-03-15</lastmod>
     </url>
 
     <url>
         <loc>https://www.ivanbeltrame.com/certificati</loc>
-        <lastmod>2025-01-09</lastmod>
+        <lastmod>2025-03-15</lastmod>
     </url>
     
     <url>
         <loc>https://www.ivanbeltrame.com/projects</loc>
-        <lastmod>2025-01-09</lastmod>
+        <lastmod>2025-03-15</lastmod>
     </url>
 
     <url>
         <loc>https://www.ivanbeltrame.com/contatti</loc>
-        <lastmod>2025-01-09</lastmod>
+        <lastmod>2025-03-15</lastmod>
+    </url>
+
+    <url>
+        <loc>https://www.ivanbeltrame.com/privacy-policy</loc>
+        <lastmod>2025-03-15</lastmod>
     </url>
 </urlset>

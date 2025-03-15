@@ -1,4 +1,4 @@
-const cacheVersion = "v34";
+const cacheVersion = "v35";
 const statiCache = "site-static-" + cacheVersion;
 const dynamicCache = "site-dynamic-" + cacheVersion;
 
@@ -8,7 +8,8 @@ const pages = [
     "/certificati",
     "/contatti",
     "/fallback",
-    "/ca"
+    "/ca",
+    "/privacy-policy"
 ];
 const pagesFullURL = [
     "/",
@@ -16,7 +17,8 @@ const pagesFullURL = [
     "/certificati.html",
     "/contatti.html",
     "/fallback.html",
-    "/ca.html"
+    "/ca.html",
+    "/privacy-policy.html"
 ];
 const jsS = [
     "/js/app.js",

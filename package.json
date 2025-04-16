@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "sass": "sass --style expanded --source-map --embed-sources --no-error-css ./scss/custom.scss ./css/bootstrap.css",
-    "cleancss": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output ./css/ --batch --batch-suffix \".min\" \"./css/*.css\"",
+    "cleancss": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output ./css/ --batch --batch-suffix \".min\" \"./css/bootstrap.css\"",
     "build": "npm run sass && npm run cleancss"
   },
   "keywords": [],

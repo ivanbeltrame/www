@@ -1,0 +1,13 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.ivanbeltrame.www.twa",
+               "sha256_cert_fingerprints": ["EC:98:85:DD:94:D3:79:9C:AB:B8:32:CD:2C:00:99:C3:C2:4D:6D:21:CE:B1:8C:ED:61:4E:B1:3C:8D:6D:5F:DB"] }
+},{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.ivanbeltrame.www.twa",
+               "sha256_cert_fingerprints": ["7A:8F:DE:B7:FA:BA:0C:37:2F:29:EE:24:A8:C7:7E:18:EA:BA:3C:8C:AF:0C:FE:20:A7:5A:94:26:97:BE:C0:0C"] }
+},{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.ivanbeltrame.www.twa",
+               "sha256_cert_fingerprints": ["50:95:CC:E4:A3:1E:E0:95:9A:6F:24:69:82:85:93:FE:83:69:3F:98:7D:AD:65:C1:64:F6:A1:46:34:74:34:D5"] }
+}]

@@ -1,2 +1,4 @@
 node_modules/
 bootstrap-*/
+_site/
+.jekyll-cache/

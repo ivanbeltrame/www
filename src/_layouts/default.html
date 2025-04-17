@@ -9,7 +9,7 @@
         <!-- Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
         <!-- Metatags -->
-        <title>Ivan Beltrame - {{ page.title }}</title>
+        <title>{% if page.title != "Ivan Beltrame" %}Ivan Beltrame - {% endif %}{{ page.title }}</title>
         <meta name ="description" content ="{{ page.description }}">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
         <meta name="theme-color" content="#0d6efd">
         <link rel="manifest" href="/manifest.json">
         <!-- OpenGraph -->
-        <meta property="og:title" content="Ivan Beltrame - {{ page.title }}">
+        <meta property="og:title" content="{% if page.title != 'Ivan Beltrame' %}Ivan Beltrame - {% endif %}{{ page.title }}">
         <meta property="og:description" content="{{ page.description }}">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://www.ivanbeltrame.com/img/favicon.png">
@@ -27,7 +27,7 @@
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@IvanBeltramee">
         <meta name="twitter:creator" content="@IvanBeltramee">
-        <meta name="twitter:title" content="Ivan Beltrame - {{ page.title }}">
+        <meta name="twitter:title" content="{% if page.title != 'Ivan Beltrame' %}Ivan Beltrame - {% endif %}{{ page.title }}">
         <meta name="twitter:description" content="{{ page.description }}">
     </head>
     <body>

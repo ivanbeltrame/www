@@ -1,0 +1,16 @@
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .mainContent {
+        max-width: 100%;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .mainContent {
+        max-width: 75%;
+    }
+}
+
+.immagine-errore {
+    max-width: 30em;
+}

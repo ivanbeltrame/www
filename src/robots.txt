@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /404
+Disallow: /404.html
+Disallow: /fallback
+Disallow: /fallback.html
+Allow: /
+Allow: /img/
+Allow: /img/certs/grasshooper/
+Allow: /img/certs/hackerx/
+Allow: /img/certs/harvard/
+Allow: /img/certs/sololearn/
+
+Sitemap: https://www.ivanbeltrame.com/sitemap.xml

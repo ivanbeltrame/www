@@ -1,23 +1,11 @@
 <footer class="mx-auto w-75 text-center mb-4">
     <hr>
-    <a class="icon-link m-2" href="https://www.instagram.com/ivanbeltramee/" target="_blank" rel="noopener noreferrer" aria-label="Il mio profilo Instagram">
-        <i class="bi bi-instagram fs-4"></i>
-    </a>
-    <a class="icon-link m-2" href="https://github.com/ivanbeltrame" target="_blank" rel="noopener noreferrer" aria-label="Il mio profilo GitHub">
-        <i class="bi bi-github fs-4"></i>
-    </a>
-    <a class="icon-link m-2" href="https://www.linkedin.com/in/ivan-beltrame/" target="_blank" rel="noopener noreferrer" aria-label="Il mio profilo LinkedIn">
-        <i class="bi bi-linkedin fs-4"></i>
-    </a>
-    <a class="icon-link m-2" href="https://twitter.com/IvanBeltramee" target="_blank" rel="noopener noreferrer" aria-label="Il mio profilo Twitter">
-        <i class="bi bi-twitter-x fs-4"></i>
-    </a>
-    <a class="icon-link m-2" href="https://www.facebook.com/profile.php?id=100083938833369" target="_blank" rel="noopener noreferrer" aria-label="Il mio profilo Facebook">
-        <i class="bi bi-facebook fs-4"></i>
-    </a>
-    <a class="icon-link m-2" href="mailto:ivan@ivanbeltrame.com" target="_blank" rel="noopener noreferrer" aria-label="La mia email">
-        <i class="bi bi-envelope-at fs-4"></i>
-    </a>
+    {% include link.html href="https://www.instagram.com/ivanbeltramee/" text='<i class="bi bi-instagram fs-4"></i>' label="Il mio profilo Instagram" class="m-2" %}
+    {% include link.html href="https://github.com/ivanbeltrame" text='<i class="bi bi-github fs-4"></i>' label="Il mio profilo GitHub" class="m-2" %}
+    {% include link.html href="https://www.linkedin.com/in/ivan-beltrame/" text='<i class="bi bi-linkedin fs-4"></i>' label="Il mio profilo LinkedIn" class="m-2" %}
+    {% include link.html href="https://twitter.com/IvanBeltramee" text='<i class="bi bi-twitter-x fs-4"></i>' label="Il mio profilo Twitter" class="m-2" %}
+    {% include link.html href="https://www.facebook.com/profile.php?id=100083938833369" text='<i class="bi bi-facebook fs-4"></i>' label="Il mio profilo Facebook" class="m-2" %}
+    {% include link.html href="mailto:ivan@ivanbeltrame.com" text='<i class="bi bi-envelope-at fs-4"></i>' label="La mia email" class="m-2" %}
     <br><br>
     <a href="/privacy-policy">
         Privacy Policy

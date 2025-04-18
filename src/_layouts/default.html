@@ -35,7 +35,9 @@
         <div class="bg-primary-subtle text-center p-4 shadow-sm">
             <h2 class="fs-1 lh-base fw-bold">{% if page.title == "Ivan Beltrame" %}Il mio sito,<br>il mio spazio{% else %}{{ page.title}}{% endif %}</h2>
         </div>
-        {{ content }}
+        <div class="p-5 mx-auto mainContent">
+            {{ content }}
+        </div>
         {% include footer.html%}
     </body>
 </html>

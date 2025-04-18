@@ -20,3 +20,7 @@
 .errorImage {
     max-width: 30em;
 }
+
+.sectionLink:hover {
+    --bs-link-underline-opacity: 100;
+}

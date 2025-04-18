@@ -1,0 +1,31 @@
+---
+layout: default
+title: Certification Authority
+description: Esplora i servizi di certificazione sicuri e affidabili offerti da Ivan Beltrame CA, garantendo una protezione completa per le tue comunicazioni online e la sicurezza dei dati sensibili.
+---
+{% include section-header.html id="ca" text="CA e intermediari" %}
+<p>
+    Root CA: {% include link.html href="/ca/Ivan_Beltrame_Root_CA.crt" text="Ivan Beltrame Root CA" %}<br>
+    Validità: venerdì 9 febbraio 2024 20:19:00 CET - <b>martedì 9 febbraio 2044 20:19:00 CET</b><br>
+    Seriale: <b>259E1F9CB2A78530</b><br>
+    SHA256: <b>3E:96:22:34:A6:37:E4:3F:87:CA:DD:39:91:16:E0:AE:D6:46:BE:88:E9:58:BB:7C:C3:6B:10:A0:16:FC:84:73</b><br>
+    Certificate revocation list: {% include link.html href="/crl/ca.crl" text="CA CRL" %}<br>
+    <br>
+    People CA: {% include link.html href="/ca/Ivan_Beltrame_People_CA_chain.crt" text="Ivan Beltrame People CA (chain)" %}<br>
+    Validità: venerdì 9 febbraio 2024 20:20:00 CET - <b>mercoledì 9 febbraio 2028 20:20:00 CET</b><br>
+    Seriale: <b>09DFFD9519498F96</b><br>
+    SHA256: <b>57:00:B2:94:B0:77:E0:F3:6B:05:DD:E4:FD:F6:37:AA:B2:2A:FE:E4:C9:D1:B2:51:F9:CF:36:BA:C6:BC:11:E3</b><br>
+    Certificate revocation list: {% include link.html href="/crl/people.crl" text="People CRL" %}<br>
+    <br>
+    Servers CA: {% include link.html href="/ca/Ivan_Beltrame_Servers_CA_chain.crt" text="Ivan Beltrame Servers CA (chain)" %}<br>
+    Validità: venerdì 9 febbraio 2024 20:21:00 CET - <b>mercoledì 9 febbraio 2028 20:21:00 CET</b><br>
+    Seriale: <b>2E91D9816DF654D0</b><br>
+    SHA256: <b>5C:98:6C:86:28:1C:B3:05:D2:53:CC:27:6E:C6:51:F7:3C:CC:3D:73:BF:47:CD:17:89:4B:E2:01:E5:BE:23:94</b><br>
+    Certificate revocation list: {% include link.html href="/crl/servers.crl" text="Servers CRL" %}
+</p>
+{% include section-header.html id="richiesta" text="Richiesta certificati" %}
+<p>
+    Per la richiesta di un certificato per una persona è possibile contattare <a href="mailto:ca@ivanbeltrame.com">ca@ivanbeltrame.com</a> per potersi mettere d'accordo e rilasciare il certificato previa verifica dell'identità.<br>
+    Lo scambio dei certificati avviene tramite CSR, in cui il richiedente dovrà generare una chiave privata e poi generare un <i>certificate signing request</i> da inoltrare all'email soprastante.<br>
+    Dopo massimo 24 ore si riceverà il proprio certificato pubblico firmato da <i>Ivan Beltrame People CA</i>.
+</p>

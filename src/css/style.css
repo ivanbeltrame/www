@@ -3,11 +3,17 @@
     .mainContent {
         max-width: 100%;
     }
+    .projectCard {
+        width: 260px;
+    }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .mainContent {
         max-width: 75%;
+    }
+    .projectCard {
+        width: 360px;
     }
 }
 

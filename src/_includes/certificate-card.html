@@ -1,0 +1,23 @@
+<div class="customCard card text-center m-2">
+    <div class="card-body">
+        <h5 class="card-title">{{ include.title }}</h5>
+        <img src="/img/certificates/{{ include.category }}/{{ include.id }}.jpg" alt="Certificato {{ include.title }}" class="card-img" loading="lazy">
+        <div class="d-flex justify-content-around align-items-center mt-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#{{ include.category }}-{{ include.id }}-modal">
+                Zoom
+            </button>
+            <div class="modal fade" id="{{ include.category }}-{{ include.id }}-modal" tabindex="-1" aria-labelledby="{{ include.category }}-{{ include.id }}-modal-label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 mx-auto" id="{{ include.category }}-{{ include.id }}-modal-label">{{ include.title }}</h1>
+                            <button type="button" class="btn-close mx-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="/img/certificates/{{ include.category }}/{{ include.id }}.jpg" alt="Certificato {{ include.title }}" loading="lazy" class="w-100">
+                    </div>
+                </div>
+            </div>
+            {% if include.link %}<a href="{{ include.link }}" class="card-link" target="_blank" rel="noopener noreferrer">Link</a>{% endif %}
+        </div>
+    </div>
+</div>

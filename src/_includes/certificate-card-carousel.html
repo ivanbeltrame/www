@@ -1,0 +1,42 @@
+<div class="customCard card text-center m-2">
+    <div class="card-body">
+        <h5 class="card-title">{{ include.title }}</h5>
+        <img src="/img/certificates/{{ include.category }}/{{ include.id }}.jpg" alt="Certificato {{ include.title }}" class="card-img" loading="lazy">
+        <div class="d-flex justify-content-around align-items-center mt-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#{{ include.category }}-{{ include.id }}-modal">Zoom</button>
+            <div class="modal fade" id="{{ include.category }}-{{ include.id }}-modal" tabindex="-1" aria-labelledby="{{ include.category }}-{{ include.id }}-modal-label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 mx-auto" id="{{ include.category }}-{{ include.id }}-modal-label">{{ include.title }}</h1>
+                            <button type="button" class="btn-close mx-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="{{ include.category }}-{{ include.id }}-carousel" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/img/certificates/{{ include.category }}/{{ include.id }}.jpg" class="d-block w-100" alt="Certificato {{ include.title }}" loading="lazy">
+                                    </div>
+                                    {% for img in include.imgs %}
+                                    <div class="carousel-item">
+                                        <img src="/img/certificates/{{ include.category }}/{{ img }}.jpg" class="d-block w-100" alt="Certificato {{ include.title }}" loading="lazy">
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#{{ include.category }}-{{ include.id }}-carousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Precedente</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#{{ include.category }}-{{ include.id }}-carousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Prossimo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="{{ include.link }}" class="card-link" target="_blank" rel="noopener noreferrer">Link</a>
+        </div>
+    </div>
+</div>

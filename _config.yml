@@ -1,3 +1,1 @@
-source: src
-
 include: ['.well-known']

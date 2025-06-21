@@ -3,7 +3,7 @@ layout: collection
 title: Certificati
 description: Qui puoi trovare tutti i miei certificati ordinati per società di emissione e di importanza
 ---
-<div class="text-center">{% include section-header.html id="harvard" text="Harvard" %}</div>
+{% include section-header.html id="harvard" text="Harvard" %}
 <div class="d-flex flex-wrap justify-content-evenly text-center">
 {% assign imgs="cs50x" | split: "," %}
 {% include certificate-card-carousel.html category="harvard" id="cs50x-ver" title="CS50x" imgs=imgs link="https://courses.edx.org/certificates/5623fefeedf940648e848229dca4456c" %}
@@ -12,7 +12,8 @@ description: Qui puoi trovare tutti i miei certificati ordinati per società di 
 {% assign imgs="cs50ai-ver" | split: "," %}
 {% include certificate-card-carousel.html category="harvard" id="cs50ai-pro" title="CS50ai" imgs=imgs link="https://credentials.edx.org/credentials/5bbbfff9bab14d3eb6a35113ef315679/" %}
 </div>
-<div class="text-center">{% include section-header.html id="sololearn" text="SoloLearn" %}</div>
+<hr class="mx-auto w-75">
+{% include section-header.html id="sololearn" text="SoloLearn" %}
 <div class="d-flex flex-wrap justify-content-evenly text-center">
 {% include certificate-card.html category="sololearn" id="jquery" title="JQuery" link="https://www.sololearn.com/Certificate/1082-22861213/png" %}
 {% include certificate-card.html category="sololearn" id="python" title="Python" %}
@@ -24,7 +25,8 @@ description: Qui puoi trovare tutti i miei certificati ordinati per società di 
 {% include certificate-card.html category="sololearn" id="java" title="Java" %}
 {% include certificate-card.html category="sololearn" id="html" title="HTML" link="https://www.sololearn.com/Certificate/CT-XAMGWGXG/png" %}
 </div>
-<div class="text-center">{% include section-header.html id="hackerx" text="HackerX" %}</div>
+<hr class="mx-auto w-75">
+{% include section-header.html id="hackerx" text="HackerX" %}
 <div class="d-flex flex-wrap justify-content-evenly text-center">
 {% include certificate-card.html category="hackerx" id="ethical-hacking" title="Courses of ethical hacking" %}
 {% include certificate-card.html category="hackerx" id="android" title="Android hacking" %}
@@ -47,7 +49,8 @@ description: Qui puoi trovare tutti i miei certificati ordinati per società di 
 {% include certificate-card.html category="hackerx" id="wap2" title="WiFi hacking WPA-WPA2" %}
 {% include certificate-card.html category="hackerx" id="wordpress" title="Wordpress scanning" %}
 </div>
-<div class="text-center">{% include section-header.html id="grasshopper" text="GrassHopper" %}</div>
+<hr class="mx-auto w-75">
+{% include section-header.html id="grasshopper" text="GrassHopper" %}
 <div class="d-flex flex-wrap justify-content-evenly text-center">
 {% include certificate-card.html category="grasshopper" id="editor" title="Code editor" %}
 {% include certificate-card.html category="grasshopper" id="interviewing" title="Intro to interviewing" %}

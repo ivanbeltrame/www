@@ -15,11 +15,29 @@ description: Il mio sito personale dove puoi trovare qualche fatto su di me, ved
     <br><br>
     Sono aperto alla realizzazione di progetti web e nella gestione sicura di domini web. Esplora il mio sito per vedere alcuni dei miei progetti passati e attuali e non esitare a contattarmi per fare una chiacchierata!
 </p>
-<hr>
-{% include section-header.html id="certificati-cs50ai" text="Informatica per l'intelligenza artificiale" %}
+<div class="text-center">
+    <a href="/contatti" role="button" class="btn btn-primary mx-auto p-2 customButton">Contattami</a>
 
-{% include section-header.html id="certificati-cs50p" text="Informatica per la programmazione in Python" %}
+    <hr>
+    {% include section-header.html id="certificati-cs50ai" text="Informatica per l'intelligenza artificiale" %}
+    {% include home-image.html img="certificates/harvard/cs50ai-pro" descr="" %}
+    {% include home-image.html img="certificates/harvard/cs50ai-ver" descr="" %}
 
-{% include section-header.html id="certificati-cs50" text="CS50 Introduzione all'informatica" %}
+    {% include section-header.html id="certificati-cs50p" text="Informatica per la programmazione in Python" %}
+    {% include home-image.html img="certificates/harvard/cs50p-pro" descr="" %}
+    {% include home-image.html img="certificates/harvard/cs50p-ver" descr="" %}
 
-{% include section-header.html id="progetti-finali" text="Progetti di fine corso" %}
+    {% include section-header.html id="certificati-cs50" text="CS50 Introduzione all'informatica" %}
+    {% include home-image.html img="certificates/harvard/cs50x-ver" descr="" %}
+    {% include home-image.html img="certificates/harvard/cs50x" descr="" %}
+
+    <hr>
+    {% include section-header.html id="progetti-finali" text="Progetti di fine corso" %}
+
+
+    {% include video-player.html link="https://www.youtube.com/watch?v=Zhjn8BYPeI0" thumbnail="ivanmusic" title="IvanMusic - Il mio progetto finale per CS50P" descr="IvanMusic è stato realizzato totalmente da me, Ivan Beltrame." %}
+    {% include video-player.html link="https://www.youtube.com/watch?v=FTDHOeG9krM" thumbnail="ivanweather" title="IvanWeather - Il mio progetto finale per CS50" descr='
+        IvanWeather è stato realizzato totalmente da me, Ivan Beltrame.<br>
+        Sito: <a href="https://ivanweather.com" target="_blank" rel="noopener noreferrer">ivanweather.com</a><br>
+        Documentazione: <a href="https://myivanweather.ivanbeltrame.com" target="_blank" rel="noopener noreferrer">myivanweather.ivanbeltrame.com</a>' %}
+</div>

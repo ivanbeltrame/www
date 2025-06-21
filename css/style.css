@@ -6,6 +6,12 @@
     .customCard {
         width: 260px;
     }
+    .customButton {
+        width: 50%;
+    }
+    .customImage {
+        width: 100%;
+    }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -14,6 +20,12 @@
     }
     .customCard {
         width: 360px;
+    }
+    .customButton {
+        width: 25%;
+    }
+    .customImage {
+        width: 40%;
     }
 }
 
@@ -28,4 +40,19 @@
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   filter: invert(1);
+}
+
+.videoPlayer {
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+}
+.videoPlayer .videoThumbnail {
+    min-width: 250px;
+}
+.videoPlayer .playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

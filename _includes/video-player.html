@@ -1,0 +1,14 @@
+<div class="row my-5 text-start">
+    <div class="col">
+        <a href="{{ include.link }}" target="_blank" rel="noopener noreferrer">
+            <div class="videoPlayer">
+                <img class="border border-secondary-subtle w-100 videoThumbnail" src="/img/videos/{{ include.thumbnail }}.jpg" alt="IvanMusic">
+                <i class="bi bi-play-btn-fill fs-1 text-danger playButton"></i>
+            </div>
+        </a>
+    </div>
+    <div class="col">
+        <h3 class="fw-bold">{{ include.title }}</h3>
+        <p>{{ include.descr }}</p>
+    </div>
+</div>

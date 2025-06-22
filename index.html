@@ -5,7 +5,7 @@ description: Il mio sito personale dove puoi trovare qualche fatto su di me, ved
 ---
 {% include section-header.html id="bio" text="Sviluppatore web e software" %}
 <p>
-    Ciao! Sono Ivan Beltrame, uno sviluppatore web da oltre 8 anni. Utilizzando principalmente JavaScript, PHP e Python, che mi hanno permesso di realizzare diversi progetti che arricchiscono il mio portfolio.
+    Ciao! Sono Ivan Beltrame, uno sviluppatore web da oltre <span id="experience-years">3</span> anni. Utilizzando principalmente JavaScript, PHP e Python, che mi hanno permesso di realizzare diversi progetti che arricchiscono il mio portfolio.
     <br><br>
     La mia passione per la sicurezza web e l'informatica mi ha portato a sviluppare abilità nella gestione di più domini web in maniera professionale e sicura, garantendo la massima protezione per i dati dei miei visitatori.
     <br><br>
@@ -31,6 +31,8 @@ description: Il mio sito personale dove puoi trovare qualche fatto su di me, ved
     {% include home-image.html img="certificates/harvard/cs50x-ver" descr="" %}
     {% include home-image.html img="certificates/harvard/cs50x" descr="" %}
 
+    <h4>Guarda tutti <a href="/certificati">i miei certificati qui</a></h4>
+
     <hr>
     {% include section-header.html id="progetti-finali" text="Progetti di fine corso" %}
 
@@ -40,4 +42,12 @@ description: Il mio sito personale dove puoi trovare qualche fatto su di me, ved
         IvanWeather è stato realizzato totalmente da me, Ivan Beltrame.<br>
         Sito: <a href="https://ivanweather.com" target="_blank" rel="noopener noreferrer">ivanweather.com</a><br>
         Documentazione: <a href="https://myivanweather.ivanbeltrame.com" target="_blank" rel="noopener noreferrer">myivanweather.ivanbeltrame.com</a>' %}
+</div>
+<div class="position-fixed bottom-0 end-0 p-3 text-center">
+    {% include toast.html id="instagramToast" icon='<i class="bi bi-instagram fs-4 me-2" style="color: #bc2a8d;"></i>' title="Instagram" content='
+        Dai un\'occhiata al mio profilo <b>Instagram</b>.<br>
+        <a class="btn btn-primary mt-2" href="https://www.instagram.com/ivanbeltramee/" role="button" target="_blank" rel="noopener noreferrer">Visita</a>' %}
+    {% include toast.html id="ivanWeatherToast" icon='<img src="https://www.ivanweather.com/img/IvanWeather.png" class="rounded me-2" alt="Logo" width="40">' title="IvanWeather" content='
+        Dai un\'occhiata a IvanWeather, il mio progetto finale per CS50. <b>Da oggi con la possibilità di vedere il meteo dei prossimi 5 giorni, in scatti di 3 ore.</b><br>
+        <a class="btn btn-primary mt-2" href="https://www.ivanweather.com" role="button" target="_blank" rel="noopener noreferrer">Visita</a>' %}
 </div>

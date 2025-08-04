@@ -33,6 +33,7 @@ const imgs = [
     "/favicon.ico",
     "/img/404.jpg",
     "/img/logo.png",
+    "/img/certificates/accredible/play-store-listing.jpg",
     "/img/certificates/grasshopper/animations-2.jpg",
     "/img/certificates/grasshopper/animations.jpg",
     "/img/certificates/grasshopper/arrays.jpg",

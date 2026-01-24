@@ -1,0 +1,64 @@
+---
+import CollectionLayout from "../layouts/CollectionLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+---
+<CollectionLayout title="Progetti" description="Qui puoi trovare tutti i miei progetti creati nel corso della mia carriera">
+    <SectionHeader id="personali">Personali</SectionHeader>
+    <div class="d-flex flex-wrap justify-content-evenly text-center">
+        <ProjectCard title="IvanWeather" href="https://www.ivanweather.com/">Servizio meteo in tempo reale in tutto il mondo</ProjectCard>
+        <ProjectCard title="IvanGames" href="https://games.ivanbeltrame.com/">Tutti i miei giochi in un unico sito</ProjectCard>
+        <ProjectCard title="Applicazioni Web" href="https://apps.ivanbeltrame.com/">Le mie applicazioni web</ProjectCard>
+        <ProjectCard title="Blog" href="https://blog.ivanbeltrame.com">Il mio blog personale</ProjectCard>
+        <ProjectCard title="Status" href="https://status.ivanbeltrame.com">Sito in cui controllare lo stato del mio intero dominio</ProjectCard>
+        <ProjectCard title="Belbab" href="https://belbab.ivanbeltrame.com/">Le mie squadre del cuore</ProjectCard>
+        <ProjectCard title="Er Galassia" href="https://ergalassia.ivanbeltrame.com/">La storia di un mio alterego</ProjectCard>
+        <ProjectCard title="Links" href="https://links.ivanbeltrame.com">Link veloci</ProjectCard>
+        <div class="customCard card m-2">
+            <div class="card-body">
+                <h4 class="card-title">IvanMusic</h4>
+                <p class="card-text">
+                    Sito per vedere le tue statistiche di Spotify (Accesso limitato)
+                </p>
+                <a class="card-link" role="button" data-bs-toggle="modal" data-bs-target="#IvanMusicModal">Link</a>
+                <!-- Modal -->
+                <div class="modal fade" id="IvanMusicModal" tabindex="-1" aria-labelledby="IvanMusicModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="IvanMusicModal">Accesso limitato</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Per accedere a IvanMusic devi avere un account fornito da
+                                <a href="mailto:ivan@ivanbeltrame.com" target="_blank" rel="noopener noreferrer">ivan@ivanbeltrame.com</a>
+                                e un account Spotify abilitato.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                            <a class="card-link btn btn-warning" href="https://music.ivanbeltrame.com" target="_blank" rel="noopener noreferrer">Continua</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr class="mx-auto w-75">
+    <SectionHeader id="scolastici">Scolastici</SectionHeader>
+    <div class="d-flex flex-wrap justify-content-evenly text-center">
+        <ProjectCard title="Galileo Galilei" href="https://galileogalilei.ivanbeltrame.com">Video animato su Galileo Galilei</ProjectCard>
+        <ProjectCard title="La colazione dei canottieri" href="https://lacolazionedeicanottieri.ivanbeltrame.com">Quadro "La colazione dei canottieri"</ProjectCard>
+        <ProjectCard title="Il lavoro nella Costituzione" href="https://lavoronellacostituzione.ivanbeltrame.com">Elaborato sulla condizione del lavoro nella Costituzione</ProjectCard>
+        <ProjectCard title="Prototipo dashboard antenna 5G" href="https://prototipo-dashboard-5g.ivanbeltrame.com">Prototipo di una dashboard per un'antenna 5G</ProjectCard>
+        <ProjectCard title="Appunti" href="https://appunti.ivanbeltrame.com/">I miei appunti di varie materie</ProjectCard>
+        <ProjectCard title="Eleonora D'Arborea" href="https://eleonoradarborea.ivanbeltrame.com/">Video animato su Eleonora D'Arborea</ProjectCard>
+        <ProjectCard title="Vandali in Sardegna (popolo)" href="https://vandalisardegna.ivanbeltrame.com/">Elaborato sui Vandali in Sardegna (popolo)</ProjectCard>
+        <ProjectCard title="Giulia Maggiore" href="https://giuliamaggiore.ivanbeltrame.com/">Video animato su Giulia Maggiore, figlia di Ottaviano Augusto</ProjectCard>
+        <ProjectCard title="Misericordia" href="https://misericordia.ivanbeltrame.com/">Sito fatto per Monumenti Aperti del 2023 per la mia scuola</ProjectCard>
+        <ProjectCard title="Re di Roma" href="https://rediroma.ivanbeltrame.com/">Elaborato sui sette re di Roma</ProjectCard>
+    </div>
+</CollectionLayout>

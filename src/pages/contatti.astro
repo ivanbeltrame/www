@@ -1,0 +1,40 @@
+---
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import Link from "../components/Link.astro";
+---
+<DefaultLayout title="Contatti" description="La mia pagina dei contantti in cui sono presenti tutti i modi in cui mi puoi parlare, inclusi social e email">
+    <SectionHeader id="social">Rispondo anche ai messaggi sui social</SectionHeader>
+    <ul>
+        <li>Instagram: <Link href="https://www.instagram.com/ivanbeltramee/">ivanbeltramee</Link></li>
+        <li>GitHub: <Link href="https://github.com/ivanbeltrame">ivanbeltrame</Link></li>
+        <li>LinkedIn: <Link href="https://www.linkedin.com/in/ivan-beltrame">ivan-beltrame</Link></li>
+        <li>Bluesky: <Link href="https://bsky.app/profile/ivanbeltrame.com">ivanbeltrame.com</Link></li>
+        <li>X (Twitter): <Link href="https://twitter.com/IvanBeltramee">IvanBeltramee</Link></li>
+        <li>Facebook: <Link href="https://www.facebook.com/ivanbeltramee/">Ivan Beltrame</Link></li>
+    </ul>
+    <SectionHeader id="richieste">Sempre disponibile per ogni richiesta</SectionHeader>
+    <p>Sono disponibile per qualsiasi conversazione all'email <Link href="mailto:ivan@ivanbeltrame.com">ivan@ivanbeltrame.com</Link></p>
+    <SectionHeader id="comunicazioni-sicure">Comunicazioni sicure</SectionHeader>
+    <p>
+        Per comunicare in maniera sicura con me puoi utilizzare la mia chiave gpg pubblica per crittografare i messaggi.<br>
+        Chiave GPG <Link href="/assets/IvanBeltrame.asc">765C D50E D0BD 707D</Link>
+    </p>
+    <SectionHeader id="orcid">ORCiD</SectionHeader>
+    <p>Il mio ORCiD ufficiale è <Link href="https://orcid.org/0009-0000-0728-4542">0009-0000-0728-4542</Link></p>
+    <SectionHeader id="privacy-policy">Privacy policy</SectionHeader>
+    <p>Puoi consultare la privacy policy in <a href="/privacy-policy">questa pagina</a></p>
+    <SectionHeader id="repository">Repository del sito</SectionHeader>
+    <p>
+        Puoi consultare la repository del mio sito <Link href="https://github.com/ivanbeltrame/www">su GitHub</Link><br>
+        Questo sito è online dal 01/09/2022<span id="site-age"></span>
+    </p>
+    <script>
+        // Calculate website years
+        let websiteCreation = new Date("2022-09-01T13:05:36Z");
+        let now = new Date();
+        let diff = now - websiteCreation;
+        let years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+        document.getElementById("site-age").innerText = " (ben " + years + " anni!)";
+    </script>
+</DefaultLayout>

@@ -1,0 +1,57 @@
+---
+import Head from "../components/Head.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Toast from "../components/Toast.astro";
+const { title, description } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+    <Head title={ title } description={ description } />
+    <body>
+        <Navbar />
+        <div class="bg-primary-subtle text-center p-4 shadow-sm">
+            <h2 class="fs-1 lh-base fw-bold">Il mio sito,<br>il mio spazio</h2>
+        </div>
+        <div class="px-5 py-4 mx-auto mainContent">
+            <slot />
+        </div>
+        <Footer />
+        <div class="position-fixed bottom-0 end-0 p-3 text-center">
+            <Toast id="instagramToast" title="Instagram">
+                <i slot="icon" class="bi bi-instagram fs-4 me-2" style="color: #bc2a8d;"></i>
+                Dai un'occhiata al mio profilo <b>Instagram</b>.<br>
+                <a class="btn btn-primary mt-2" href="https://www.instagram.com/ivanbeltramee/" role="button" target="_blank" rel="noopener noreferrer">Visita</a>
+            </Toast>
+            <Toast id="ivanWeatherToast" title="IvanWeather">
+                <img slot="icon" src="https://www.ivanweather.com/img/IvanWeather.png" class="rounded me-2" alt="Logo" width="40">
+                Dai un'occhiata a IvanWeather, il mio progetto finale per CS50. <b>Da oggi con la possibilità di vedere il meteo dei prossimi 5 giorni, in scatti di 3 ore.</b><br>
+                <a class="btn btn-primary mt-2" href="https://www.ivanweather.com" role="button" target="_blank" rel="noopener noreferrer">Visita</a>
+            </Toast>
+        </div>
+    </body>
+    <script>
+        let month = new Date().getMonth() +1;
+        let day = new Date().getDate();
+
+        // Check if it is my birthday
+        if (month === 1 && day === 14) {
+            console.log("day");
+            document.getElementById("navbar-title").insertAdjacentHTML('afterend', '<i class="bi bi-cake2 fs-3"></i>');
+        }
+
+        // Calculate my experience years
+        document.getElementById("experience-years").innerHTML = new Date().getFullYear() - 2017;
+
+        const instagramToastDelay = 15000;
+        setTimeout(() => {
+            const instagramToast = document.getElementById('instagramToast');
+            bootstrap.Toast.getOrCreateInstance(instagramToast).show();
+
+            setTimeout(() => {
+                const ivanWeatherToast = document.getElementById('ivanWeatherToast');
+                bootstrap.Toast.getOrCreateInstance(ivanWeatherToast).show();
+            }, instagramToastDelay + 5000);
+        }, 3000);
+    </script>
+</html>

@@ -1,0 +1,4 @@
+---
+const { href, label, HTMLclass } = Astro.props;
+---
+<a href={ href } target="_blank" rel="noopener noreferrer" aria-label={label ? label : undefined} class={HTMLclass ? HTMLclass : undefined}><slot /></a>

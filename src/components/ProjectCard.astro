@@ -1,0 +1,10 @@
+---
+const { title, href } = Astro.props;
+---
+<div class="customCard card m-2">
+    <div class="card-body">
+        <h4 class="card-title">{ title }</h4>
+        <p class="card-text"><slot /></p>
+        <a class="card-link" href={ href } target="_blank" rel="noopener noreferrer">Link</a>
+    </div>
+</div>

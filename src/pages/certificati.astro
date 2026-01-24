@@ -1,0 +1,68 @@
+---
+import CollectionLayout from "../layouts/CollectionLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import CertificateCard from "../components/CertificateCard.astro";
+import CertificateCardCarousel from "../components/CertificateCardCarousel.astro";
+---
+<CollectionLayout title="Certificati" description="Qui puoi trovare tutti i miei certificati ordinati per società di emissione e di importanza">
+    <SectionHeader id="harvard">Harvard</SectionHeader>
+    <div class="d-flex flex-wrap justify-content-evenly text-center">
+    <CertificateCardCarousel category="harvard" id="cs50x-ver" title="CS50x" imgs={ ["cs50x"] } link="https://courses.edx.org/certificates/5623fefeedf940648e848229dca4456c" />
+    <CertificateCardCarousel category="harvard" id="cs50p-pro" title="CS50p" imgs={ ["cs50p-ver"] } link="https://courses.edx.org/certificates/9de6193711624fbebc3d76fc4110fad2" />
+    <CertificateCardCarousel category="harvard" id="cs50ai-pro" title="CS50ai" imgs={ ["cs50ai-ver"] } link="https://credentials.edx.org/credentials/5bbbfff9bab14d3eb6a35113ef315679/" />
+    </div>
+    <hr class="mx-auto w-75">
+    <SectionHeader id="accredible">Accredible</SectionHeader>
+    <div class="d-flex flex-wrap justify-content-evenly text-center">
+    <CertificateCard category="accredible" id="play-store-listing" title="Play Store Listing" link="https://www.credential.net/2054c452-bb4d-47f7-bd2f-95d7b0b31a80" />
+    </div>
+    <hr class="mx-auto w-75">
+    <SectionHeader id="sololearn">SoloLearn</SectionHeader>
+    <div class="d-flex flex-wrap justify-content-evenly text-center">
+    <CertificateCard category="sololearn" id="jquery" title="JQuery" link="https://www.sololearn.com/Certificate/1082-22861213/png" />
+    <CertificateCard category="sololearn" id="python" title="Python" />
+    <CertificateCard category="sololearn" id="c" title="C" />
+    <CertificateCard category="sololearn" id="sql" title="SQL" />
+    <CertificateCard category="sololearn" id="rwd" title="Responsive Web Design" link="https://www.sololearn.com/Certificate/CT-PZGAVZKD/png" />
+    <CertificateCard category="sololearn" id="javascript" title="JavaScript" />
+    <CertificateCard category="sololearn" id="php" title="PHP" link="https://www.sololearn.com/Certificate/CT-JKPZCQMO/png" />
+    <CertificateCard category="sololearn" id="java" title="Java" />
+    <CertificateCard category="sololearn" id="html" title="HTML" link="https://www.sololearn.com/Certificate/CT-XAMGWGXG/png" />
+    </div>
+    <hr class="mx-auto w-75">
+    <SectionHeader id="hackerx">HackerX</SectionHeader>
+    <div class="d-flex flex-wrap justify-content-evenly text-center">
+    <CertificateCard category="hackerx" id="ethical-hacking" title="Courses of ethical hacking" />
+    <CertificateCard category="hackerx" id="android" title="Android hacking" />
+    <CertificateCard category="hackerx" id="bring-down-website" title="Bring down a website" />
+    <CertificateCard category="hackerx" id="card-fraud" title="Credit and debit card frauds" />
+    <CertificateCard category="hackerx" id="xss" title="Cross site scripting" />
+    <CertificateCard category="hackerx" id="database" title="Database hacking" />
+    <CertificateCard category="hackerx" id="gathering-info" title="Gathering information" />
+    <CertificateCard category="hackerx" id="hiding-messages" title="Hiding messages" />
+    <CertificateCard category="hackerx" id="mac" title="MAC" />
+    <CertificateCard category="hackerx" id="keyboard-spying" title="Keyboard spying" />
+    <CertificateCard category="hackerx" id="safe-data" title="Make your data safe" />
+    <CertificateCard category="hackerx" id="network-spying" title="Network spying" />
+    <CertificateCard category="hackerx" id="os" title="OS" />
+    <CertificateCard category="hackerx" id="password" title="Password hacking" />
+    <CertificateCard category="hackerx" id="socials" title="Social media hacking" />
+    <CertificateCard category="hackerx" id="surfing-anonymously" title="Surfing anonymously" />
+    <CertificateCard category="hackerx" id="vulnerability-scanning" title="Vulnerability scanning and reporting" />
+    <CertificateCard category="hackerx" id="wep" title="WiFi hacking WEP" />
+    <CertificateCard category="hackerx" id="wap2" title="WiFi hacking WPA-WPA2" />
+    <CertificateCard category="hackerx" id="wordpress" title="Wordpress scanning" />
+    </div>
+    <hr class="mx-auto w-75">
+    <SectionHeader id="grasshopper">GrassHopper</SectionHeader>
+    <div class="d-flex flex-wrap justify-content-evenly text-center">
+    <CertificateCard category="grasshopper" id="editor" title="Code editor" />
+    <CertificateCard category="grasshopper" id="interviewing" title="Intro to interviewing" />
+    <CertificateCard category="grasshopper" id="debugging" title="Debugging code" />
+    <CertificateCard category="grasshopper" id="fundamentals" title="Coding fundamentals" />
+    <CertificateCard category="grasshopper" id="fundamentals-2" title="Coding fundamentals 2" />
+    <CertificateCard category="grasshopper" id="arrays" title="Array methods"  />
+    <CertificateCard category="grasshopper" id="animations" title="Animations" />
+    <CertificateCard category="grasshopper" id="animations-2" title="Animations 2" />
+    </div>
+</CollectionLayout>

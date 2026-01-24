@@ -1,0 +1,56 @@
+---
+import HomeLayout from "../layouts/HomeLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import HomeImage from "../components/HomeImage.astro";
+import VideoPlayer from "../components/VideoPlayer.astro";
+import { Image } from "astro:assets";
+import cs50aiProImage from "../images/certificates/harvard/cs50ai-pro.jpg";
+import cs50aiVerImage from "../images/certificates/harvard/cs50ai-ver.jpg";
+import cs50pProImage from "../images/certificates/harvard/cs50p-pro.jpg";
+import cs50pVerImage from "../images/certificates/harvard/cs50p-ver.jpg";
+import cs50xVerImage from "../images/certificates/harvard/cs50x-ver.jpg";
+import cs50xImage from "../images/certificates/harvard/cs50x.jpg";
+---
+<HomeLayout title="Ivan Beltrame">
+    <SectionHeader id="bio">Sviluppatore web e software</SectionHeader>
+    <p>
+        Ciao! Sono Ivan Beltrame, uno sviluppatore web da oltre <span id="experience-years">3</span> anni. Utilizzando principalmente JavaScript, PHP e Python, che mi hanno permesso di realizzare diversi progetti che arricchiscono il mio portfolio.
+        <br><br>
+        La mia passione per la sicurezza web e l'informatica mi ha portato a sviluppare abilità nella gestione di più domini web in maniera professionale e sicura, garantendo la massima protezione per i dati dei miei visitatori.
+        <br><br>
+        Oltre alla mia esperienza come sviluppatore web, ho anche sviluppato diverse app Android utilizzando Java e creato software d'uso quotidiano con diversi linguaggi di programmazione come Python, Java, C, C++ e Rust.
+        <br><br>
+        Utilizzo da molti anni programmi come Word, Excel, Access e PowerPoint e ho imparato molte delle loro funzioni.
+        <br><br>
+        Sono aperto alla realizzazione di progetti web e nella gestione sicura di domini web. Esplora il mio sito per vedere alcuni dei miei progetti passati e attuali e non esitare a contattarmi per fare una chiacchierata!
+    </p>
+    <div class="text-center">
+        <a href="/contatti" role="button" class="btn btn-primary mx-auto p-2 customButton">Contattami</a>
+
+        <hr>
+        <SectionHeader id="certificati-cs50ai">Informatica per l'intelligenza artificiale</SectionHeader>
+        <Image src={ cs50aiProImage } alt="Certificato CS50ai professionale" class="img-fluid customImage my-3" />
+        <Image src={ cs50aiVerImage } alt="Certificato CS50ai verificato" class="img-fluid customImage my-3" />
+
+        <SectionHeader id="certificati-cs50p">Informatica per la programmazione in Python</SectionHeader>
+        <Image src={ cs50pProImage } alt="Certificato CS50p professionale" class="img-fluid customImage my-3" />
+        <Image src={ cs50pVerImage } alt="Certificato CS50p verificato" class="img-fluid customImage my-3" />
+
+        <SectionHeader id="certificati-cs50">CS50 Introduzione all'informatica</SectionHeader>
+        <Image src={ cs50xVerImage } alt="Certificato CS50x verificato" class="img-fluid customImage my-3" />
+        <Image src={ cs50xImage } alt="Certificato CS50x" class="img-fluid customImage my-3" />
+
+        <h4>Guarda tutti <a href="/certificati">i miei certificati qui</a></h4>
+
+        <hr>
+        <SectionHeader id="progetti-finali">Progetti di fine corso</SectionHeader>
+        <VideoPlayer link="https://www.youtube.com/watch?v=FTDHOeG9krM" thumbnail="ivanweather" title="IvanWeather - Il mio progetto finale per CS50">
+            IvanWeather è stato realizzato totalmente da me, Ivan Beltrame.<br>
+            Sito: <a href="https://ivanweather.com" target="_blank" rel="noopener noreferrer">ivanweather.com</a><br>
+            Documentazione: <a href="https://myivanweather.ivanbeltrame.com" target="_blank" rel="noopener noreferrer">myivanweather.ivanbeltrame.com</a>
+        </VideoPlayer>
+        <VideoPlayer link="https://www.youtube.com/watch?v=Zhjn8BYPeI0" thumbnail="ivanmusic" title="IvanMusic - Il mio progetto finale per CS50P">
+            IvanMusic è stato realizzato totalmente da me, Ivan Beltrame.
+        </VideoPlayer>
+    </div>
+</HomeLayout>

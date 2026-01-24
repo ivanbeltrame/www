@@ -39,7 +39,9 @@ const { title, category, id, link, imgs } = Astro.props;
                     </div>
                 </div>
             </div>
-            <a href={ link } class="card-link" target="_blank" rel="noopener noreferrer">Link</a>
+            { link && (
+                <a href={ link } class="card-link" target="_blank" rel="noopener noreferrer">Link</a>
+            )}
         </div>
     </div>
 </div>

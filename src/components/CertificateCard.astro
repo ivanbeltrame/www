@@ -1,6 +1,4 @@
 ---
-import { undefined } from "astro:schema";
-
 const { title, category, id, link } = Astro.props;
 ---
 <div class="customCard card text-center m-2">
@@ -22,7 +20,7 @@ const { title, category, id, link } = Astro.props;
                     </div>
                 </div>
             </div>
-            { link !== undefined && (
+            { link && (
                 <a href={ link } class="card-link" target="_blank" rel="noopener noreferrer">Link</a>
             )}
         </div>

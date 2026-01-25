@@ -2,6 +2,7 @@
 import HomeLayout from "../layouts/HomeLayout.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import VideoPlayer from "../components/VideoPlayer.astro";
+import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import cs50aiProImage from "../images/certificates/harvard/cs50ai-pro.jpg";
 import cs50aiVerImage from "../images/certificates/harvard/cs50ai-ver.jpg";
@@ -47,8 +48,8 @@ import ivanweatherThumbnailImage from "../images/videos/ivanweather.jpg";
         <SectionHeader id="progetti-finali">Progetti di fine corso</SectionHeader>
         <VideoPlayer link="https://www.youtube.com/watch?v=FTDHOeG9krM" thumbnail={ ivanmusicThumbnailImage } title="IvanWeather - Il mio progetto finale per CS50">
             IvanWeather è stato realizzato totalmente da me, Ivan Beltrame.<br>
-            Sito: <a href="https://ivanweather.com" target="_blank" rel="noopener noreferrer">ivanweather.com</a><br>
-            Documentazione: <a href="https://myivanweather.ivanbeltrame.com" target="_blank" rel="noopener noreferrer">myivanweather.ivanbeltrame.com</a>
+            Sito: <Link href="https://ivanweather.com">ivanweather.com</Link><br>
+            Documentazione: <Link href="https://myivanweather.ivanbeltrame.com">myivanweather.ivanbeltrame.com</Link>
         </VideoPlayer>
         <VideoPlayer link="https://www.youtube.com/watch?v=Zhjn8BYPeI0" thumbnail={ ivanweatherThumbnailImage } title="IvanMusic - Il mio progetto finale per CS50P">
             IvanMusic è stato realizzato totalmente da me, Ivan Beltrame.

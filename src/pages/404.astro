@@ -1,10 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
+import notFoundImage from "../images/404.jpg";
 ---
 <DefaultLayout title="404 Pagina non trovata" description="La pagina richiesta non è stata trovata sul nostro sito. Torna alla home page">
     <div class="text-center">
         <h2>La pagina richiesta non è stata trovata sul nostro sito</h2>
         <h3><a href="/">Torna alla home page</a></h3>
-        <img class="mt-4 errorImage" src="/img/404.jpg" alt="404 - Pagina non trovata">
+        <Image src={ notFoundImage } class="mt-4 errorImage w-auto" alt="404 - Pagina non trovata" />
     </div>
 </DefaultLayout>

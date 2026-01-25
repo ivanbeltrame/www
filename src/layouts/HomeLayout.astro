@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import Toast from "../components/Toast.astro";
 const { title, description } = Astro.props;
+import { Image } from "astro:assets";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,7 @@ const { title, description } = Astro.props;
                 <a class="btn btn-primary mt-2" href="https://www.instagram.com/ivanbeltramee/" role="button" target="_blank" rel="noopener noreferrer">Visita</a>
             </Toast>
             <Toast id="ivanWeatherToast" title="IvanWeather">
-                <img slot="icon" src="https://www.ivanweather.com/img/IvanWeather.png" class="rounded me-2" alt="Logo" width="40">
+                <Image src="https://www.ivanweather.com/img/IvanWeather.png" class="rounded me-2 h-auto" alt="Logo" slot="icon" style="width: 40px" inferSize />
                 Dai un'occhiata a IvanWeather, il mio progetto finale per CS50. <b>Da oggi con la possibilità di vedere il meteo dei prossimi 5 giorni, in scatti di 3 ore.</b><br>
                 <a class="btn btn-primary mt-2" href="https://www.ivanweather.com" role="button" target="_blank" rel="noopener noreferrer">Visita</a>
             </Toast>

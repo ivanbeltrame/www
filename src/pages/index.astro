@@ -9,6 +9,8 @@ import cs50pProImage from "../images/certificates/harvard/cs50p-pro.jpg";
 import cs50pVerImage from "../images/certificates/harvard/cs50p-ver.jpg";
 import cs50xVerImage from "../images/certificates/harvard/cs50x-ver.jpg";
 import cs50xImage from "../images/certificates/harvard/cs50x.jpg";
+import ivanmusicThumbnailImage from "../images/videos/ivanmusic.jpg";
+import ivanweatherThumbnailImage from "../images/videos/ivanweather.jpg";
 ---
 <HomeLayout title="Ivan Beltrame">
     <SectionHeader id="bio">Sviluppatore web e software</SectionHeader>
@@ -43,12 +45,12 @@ import cs50xImage from "../images/certificates/harvard/cs50x.jpg";
 
         <hr>
         <SectionHeader id="progetti-finali">Progetti di fine corso</SectionHeader>
-        <VideoPlayer link="https://www.youtube.com/watch?v=FTDHOeG9krM" thumbnail="ivanweather" title="IvanWeather - Il mio progetto finale per CS50">
+        <VideoPlayer link="https://www.youtube.com/watch?v=FTDHOeG9krM" thumbnail={ ivanmusicThumbnailImage } title="IvanWeather - Il mio progetto finale per CS50">
             IvanWeather è stato realizzato totalmente da me, Ivan Beltrame.<br>
             Sito: <a href="https://ivanweather.com" target="_blank" rel="noopener noreferrer">ivanweather.com</a><br>
             Documentazione: <a href="https://myivanweather.ivanbeltrame.com" target="_blank" rel="noopener noreferrer">myivanweather.ivanbeltrame.com</a>
         </VideoPlayer>
-        <VideoPlayer link="https://www.youtube.com/watch?v=Zhjn8BYPeI0" thumbnail="ivanmusic" title="IvanMusic - Il mio progetto finale per CS50P">
+        <VideoPlayer link="https://www.youtube.com/watch?v=Zhjn8BYPeI0" thumbnail={ ivanweatherThumbnailImage } title="IvanMusic - Il mio progetto finale per CS50P">
             IvanMusic è stato realizzato totalmente da me, Ivan Beltrame.
         </VideoPlayer>
     </div>

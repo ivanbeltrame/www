@@ -1,10 +1,11 @@
 ---
-const { title, category, id, link } = Astro.props;
+import { Image } from "astro:assets";
+const { title, category, id, link, pic } = Astro.props;
 ---
 <div class="customCard card text-center m-2">
     <div class="card-body">
         <h5 class="card-title">{ title }</h5>
-        <img src={`/img/certificates/${ category }/${id}.jpg`} alt={`Certificato ${ title }`} class="card-img" loading="lazy">
+        <Image src={ pic } alt={`Certificato ${ title }`} class="card-img w-100 h-auto" loading="lazy" />
         <div class="d-flex justify-content-around align-items-center mt-3">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#${ category }-${ id }-modal`}>
                 Zoom
@@ -16,7 +17,7 @@ const { title, category, id, link } = Astro.props;
                             <h1 class="modal-title fs-5 mx-auto" id={`${ category }-${ id }-modal-label`}>{ title }</h1>
                             <button type="button" class="btn-close mx-0" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <img src={`/img/certificates/${ category }/${ id }.jpg`} alt={`Certificato ${ title }`} loading="lazy" class="w-100">
+                        <Image src={ pic } alt={`Certificato ${ title }`} loading="lazy" class="w-100 h-auto" />
                     </div>
                 </div>
             </div>

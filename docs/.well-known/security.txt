@@ -1,0 +1,18 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: mailto:security@ivanbeltrame.com
+Expires: 2030-08-01T13:00:00.000Z
+Encryption: https://www.ivanbeltrame.com/assets/IvanBeltrame.asc
+Acknowledgments: https://github.com/ivanbeltrame/www/graphs/contributors
+Preferred-Languages: en, it
+Canonical: https://www.ivanbeltrame.com/.well-known/security.txt
+Policy: https://github.com/ivanbeltrame/www/tree/main?tab=coc-ov-file
+Hiring: https://www.ivanbeltrame.com/contatti
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQRee2tQIDC0Exbdh2p2XNUO0L1wfQUCaFdcywAKCRB2XNUO0L1w
+fTofAQDqw7NcHu6XY149XM5I7+UhdYtZMRM/YayAneDR2+RdngD/YQWZX3OPfTdM
+0FUTRxViyX3TzKscUCfxbJpOTMgpMQw=
+=7lno
+-----END PGP SIGNATURE-----

@@ -1,0 +1,6 @@
+/* Include all of Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap"; */
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/* Bootstrap Icons */
+@import "../../node_modules//bootstrap-icons/font/bootstrap-icons.min.css";

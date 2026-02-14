@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import purgecss from 'astro-purgecss';
+import compress from 'astro-compress';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,7 +15,9 @@ export default defineConfig({
     },
     outDir: 'docs',
     integrations: [
+        purgecss(),
         sitemap(),
+        compress(),
     ],
     // redirects: {
     //     '/old': '/new',

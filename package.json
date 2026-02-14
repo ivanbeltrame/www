@@ -11,6 +11,10 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
     "astro": "^5.17.1",
+    "astro-compress": "^2.3.9",
+    "astro-purgecss": "^5.5.0",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
     "sharp": "^0.34.5"
   }
 }

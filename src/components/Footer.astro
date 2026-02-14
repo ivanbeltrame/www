@@ -10,10 +10,8 @@ import Link from "../components/Link.astro";
     <Link href="https://twitter.com/IvanBeltramee" label="Il mio profilo Twitter" HTMLclass="m-2"><i class="bi bi-twitter-x fs-4"></i></Link>
     <Link href="https://www.facebook.com/ivanbeltramee/" label="Il mio profilo Facebook" HTMLclass="m-2"><i class="bi bi-facebook fs-4"></i></Link>
     <Link href="mailto:ivan@ivanbeltrame.com" label="La mia email" HTMLclass="m-2"><i class="bi bi-envelope-at fs-4"></i></Link>
-    <br><br>
-    <a href="/privacy-policy">
-        Privacy Policy
-    </a>
+    <br>
+    <a href="/privacy-policy">Privacy Policy</a>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 <script>
@@ -28,23 +26,23 @@ import Link from "../components/Link.astro";
 </script>
 <script type="speculationrules">
 {
-  "prerender": [
-    {
-      "source": "list",
-      "urls": ["/graduatorie/"]
-    }
-  ],
-  "prefetch": [
-    {
-      "source": "document",
-      "where": {
-        "and": [
-          { "href_matches": "*" },
-          { "not": { "selector_matches": ".no-prefetch" } }
-        ]
-      },
-      "eagerness": "eager"
-    }
-  ]
+    "prerender": [
+        {
+            "source": "list",
+            "urls": ["/graduatorie/"]
+        }
+    ],
+    "prefetch": [
+        {
+            "source": "document",
+            "where": {
+                "and": [
+                    { "href_matches": "*" },
+                    { "not": { "selector_matches": ".no-prefetch" } }
+                ]
+            },
+            "eagerness": "eager"
+        }
+    ]
 }
 </script>

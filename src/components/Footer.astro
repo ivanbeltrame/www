@@ -26,3 +26,25 @@ import Link from "../components/Link.astro";
         console.log("Service worker not supported");
     }
 </script>
+<script type="speculationrules">
+{
+  "prerender": [
+    {
+      "source": "list",
+      "urls": ["/graduatorie/"]
+    }
+  ],
+  "prefetch": [
+    {
+      "source": "document",
+      "where": {
+        "and": [
+          { "href_matches": "*" },
+          { "not": { "selector_matches": ".no-prefetch" } }
+        ]
+      },
+      "eagerness": "eager"
+    }
+  ]
+}
+</script>

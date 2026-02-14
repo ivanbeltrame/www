@@ -7,16 +7,16 @@ const { title, description } = Astro.props;
 import { Image } from "astro:assets";
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
     <Head title={ title } description={ description } />
     <body>
         <Navbar />
         <div class="bg-primary-subtle text-center p-4 shadow-sm">
             <h2 class="fs-1 lh-base fw-bold">Il mio sito,<br>il mio spazio</h2>
         </div>
-        <div class="px-5 py-4 mx-auto mainContent">
+        <main class="px-5 my-4 mx-auto mainContent">
             <slot />
-        </div>
+        </main>
         <Footer />
         <div class="position-fixed bottom-0 end-0 p-3 text-center">
             <Toast id="instagramToast" title="Instagram">

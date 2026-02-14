@@ -1,6 +1,7 @@
 {
     "name": "Ivan Beltrame",
     "short_name": "Ivan Beltrame",
+    "description": "Il mio sito personale dove puoi trovare qualche fatto su di me, vedere i miei certificati e navigare sui miei siti",
     "start_url": "/?pwa=home",
     "id": ".",
     "scope": "/",
@@ -11,7 +12,6 @@
     "dir": "ltr",
     "lang": "it",
     "categories": ["utilities", "games"],
-    "description": "Il mio sito personale dove puoi trovare qualche fatto su di me, vedere i miei certificati e navigare sui miei siti",
     "icons": [
       {
         "src": "/img/touch/icon48.png",
@@ -47,13 +47,13 @@
         "src": "/img/touch/icon512.png",
         "sizes": "512x512",
         "type": "image/png",
-        "purpose": "maskable"
+        "purpose": "any"
       },
       {
         "src": "/img/touch/icon512.png",
         "sizes": "512x512",
         "type": "image/png",
-        "purpose": "any"
+        "purpose": "maskable"
       }
     ],
     "display_override": [

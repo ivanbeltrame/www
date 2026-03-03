@@ -3,6 +3,9 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import purgecss from 'astro-purgecss';
 import compress from 'astro-compress';
+import AstroPWA from '@vite-pwa/astro';
+
+import myManifest from './src/assets/manifest.json';
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,6 +19,21 @@ export default defineConfig({
     outDir: 'docs',
     integrations: [
         purgecss(),
+        AstroPWA({
+            strategies: 'injectManifest',
+            srcDir: 'src/scripts',
+            filename: 'sw.js',
+            registerType: 'autoUpdate',
+            manifest: myManifest,
+            manifestFilename: 'manifest.json',
+            injectManifest: {
+                globPatterns: ['assets/*.{js,css,html,ico,png,svg,webp}'],
+            },
+            devOptions: {
+                enabled: true,
+                type: 'module',
+            },
+        }),
         sitemap(),
         compress(),
     ],

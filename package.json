@@ -16,5 +16,15 @@
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
     "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@vite-pwa/astro": "^1.2.0",
+    "workbox-cacheable-response": "^7.4.0",
+    "workbox-core": "^7.4.0",
+    "workbox-expiration": "^7.4.0",
+    "workbox-precaching": "^7.4.0",
+    "workbox-routing": "^7.4.0",
+    "workbox-strategies": "^7.4.0",
+    "workbox-window": "^7.4.0"
   }
 }

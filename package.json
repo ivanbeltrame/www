@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
-    "astro": "^5.17.1",
+    "astro": "^5.18.0",
     "astro-compress": "^2.3.9",
     "astro-purgecss": "^5.5.0",
     "bootstrap": "^5.3.8",

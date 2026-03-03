@@ -19,6 +19,18 @@ export default defineConfig({
         sitemap(),
         compress(),
     ],
+    image: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**.ivanbeltrame.com'
+            },
+            {
+                protocol: 'https',
+                hostname: '**.ivanweather.com'
+            },
+        ],
+    },
     // redirects: {
     //     '/old': '/new',
     //     '/blog/[...slug]': '/articles/[...slug]',

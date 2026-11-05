@@ -1,44 +1,55 @@
 ---
-import "../styles/style.css";
-import "@/styles/bootstrap.css";
+import "@/styles/style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.min.css";
+import { pwaInfo } from "virtual:pwa-info";
 
 const { title, description } = Astro.props;
 let titleHTML = "";
 if (title != "Ivan Beltrame") {
-    titleHTML = "Ivan Beltrame - " + title;
+  titleHTML = "Ivan Beltrame - " + title;
 } else {
-    titleHTML = title;
+  titleHTML = title;
 }
 ---
+
 <head>
-    <link rel="prefetch" href="/">
-    <link rel="prefetch" href="/certificati">
-    <link rel="prefetch" href="/progetti">
-    <link rel="prefetch" href="/contatti">
-    <link rel="preconnect" href="https://apps.ivanbeltrame.com">
-    <link rel="preconnect" href="https://www.ivanweather.com">
-    <!-- Favicon -->
-    <link rel="icon" href="/img/logo.png" type="image/x-icon">
-    <!-- Metatags -->
-    <title>{ titleHTML }</title>
-    <meta name ="description" content ={ description }>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ivan Beltrame">
-    <meta name="theme-color" content="#0d6efd">
-    <!-- OpenGraph -->
-    <meta property="og:title" content={ titleHTML }>
-    <meta property="og:description" content={ description }>
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.ivanbeltrame.com/img/favicon.png">
-    <meta property="og:url" content="https://www.ivanbeltrame.com">
-    <meta property="og:site_name" content="ivanbeltrame.com">
-    <!-- Twitter meta tags -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@IvanBeltramee">
-    <meta name="twitter:creator" content="@IvanBeltramee">
-    <meta name="twitter:title" content={ titleHTML }>
-    <meta name="twitter:description" content={ description }>
-    <meta name="twitter:image" content="https://www.ivanbeltrame.com/img/favicon.png">
+  <link rel="prefetch" href="/" />
+  <link rel="prefetch" href="/certificati" />
+  <link rel="prefetch" href="/progetti" />
+  <link rel="prefetch" href="/contatti" />
+  <link rel="preconnect" href="https://apps.ivanbeltrame.com" />
+  <!-- Favicon -->
+  <link rel="icon" href="/img/touch/icon32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/img/touch/icon16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/img/touch/icon512.png">
+  <!-- Metatags -->
+  <title>{titleHTML}</title>
+  <meta name="description" content={description} />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ivan Beltrame" />
+  <meta name="theme-color" content="#0d6efd" />
+  { pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
+  <!-- OpenGraph -->
+  <meta property="og:title" content={titleHTML} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.ivanbeltrame.com/img/favicon.png"
+  />
+  <meta property="og:url" content="https://www.ivanbeltrame.com" />
+  <meta property="og:site_name" content="ivanbeltrame.com" />
+  <!-- Twitter meta tags -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@IvanBeltramee" />
+  <meta name="twitter:creator" content="@IvanBeltramee" />
+  <meta name="twitter:title" content={titleHTML} />
+  <meta name="twitter:description" content={description} />
+  <meta
+    name="twitter:image"
+    content="https://www.ivanbeltrame.com/img/favicon.png"
+  />
 </head>

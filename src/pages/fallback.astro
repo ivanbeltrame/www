@@ -3,10 +3,18 @@ import { Image } from "astro:assets";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import fallbackImage from "../images/fallback.jpg";
 ---
-<DefaultLayout title="Nessuna connessione a internet" description="Al momento non è stato possibile accedere alla pagina richiesta">
-    <div class="text-center">
-        <h2>Al momento non è stato possibile accedere alla pagina richiesta</h2>
-        <h3><a href="/">Torna alla home page</a></h3>
-        <Image src={ fallbackImage } class="mt-4 errorImage w-auto" alt="Nessuna connessione a internet" />
-    </div>
+
+<DefaultLayout
+  title="Nessuna connessione a internet"
+  description="Al momento non è stato possibile accedere alla pagina richiesta"
+>
+  <div class="text-center">
+    <h2>Al momento non è stato possibile accedere alla pagina richiesta</h2>
+    <h3><a href="/">Torna alla home page</a></h3>
+    <Image
+      src={fallbackImage}
+      class="mt-4 errorImage w-auto"
+      alt="Nessuna connessione a internet"
+    />
+  </div>
 </DefaultLayout>

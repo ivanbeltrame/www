@@ -2,17 +2,22 @@
 import { Image } from "astro:assets";
 const { link, title, thumbnail } = Astro.props;
 ---
+
 <div class="row my-5 text-start">
-    <div class="col">
-        <a href={ link } target="_blank" rel="noopener noreferrer">
-            <div class="videoPlayer">
-                <Image src={ thumbnail } class="border border-secondary-subtle w-100 h-auto videoThumbnail" alt={ title } />
-                <i class="bi bi-play-btn-fill fs-1 text-danger playButton"></i>
-            </div>
-        </a>
-    </div>
-    <div class="col">
-        <h3 class="fw-bold">{ title }</h3>
-        <p><slot /></p>
-    </div>
+  <div class="col">
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <div class="videoPlayer">
+        <Image
+          src={thumbnail}
+          class="border border-secondary-subtle w-100 h-auto videoThumbnail"
+          alt={title}
+        />
+        <i class="bi bi-play-btn-fill fs-1 text-danger playButton"></i>
+      </div>
+    </a>
+  </div>
+  <div class="col">
+    <h3 class="fw-bold">{title}</h3>
+    <p><slot /></p>
+  </div>
 </div>
